@@ -1,0 +1,25 @@
+
+
+ <table class="table table-bordered">    
+     <thead>
+         <th style="text-align:center">Ім'я</td>
+         <th style="text-align:center">Опис</td>
+         <th style="text-align:center">Фото</td> 
+         <th style="text-align:center">Редагування</td>   
+     </thead>
+     <tbody>
+ {{#each hotels}}
+ <tr>    
+     <td>{{Name}}</td>
+     <td style="width:40%">{{Desc}}</td>
+     <td>{{Image}}</td>
+     <td style="text-align:center">
+         <a class="btn btn-primary" href="/admin/hotels-red/{{_id}}">Редагувати</a>
+         <hr>
+         <a class="btn btn-primary" href="/admin/hotels-del/{{_id}}">Видалити</a>
+     </td>
+ </tr>
+ {{/each}}
+ </tbody>
+ </table> 
+ <a class="btn btn-primary" href="/admin/hotels-add">Додати готель</a>

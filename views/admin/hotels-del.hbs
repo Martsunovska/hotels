@@ -1,0 +1,41 @@
+<div class="row"></div>
+<form action="" method="POST" class="form-horizontal" role="form">
+  <div class="form-group">
+    <legend class="col-md-3 col-md-offset-2">{{title}}</legend>
+  </div>
+
+  <div class="form-group">
+    <label for="hotelName" class="control-label col-md-2 col-md-offset-1">
+      Назва готелю:
+    </label>
+    <div class="form-group col-md-6">
+      <input class="form-control" type="text" id="hotelName" name="hotelName"  value="{{hotels.Name}}" disabled>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="hotelDescription" class="control-label col-md-2 col-md-offset-1">
+     Опис:
+    </label>
+    <div class="form-group col-md-6">
+      <textarea name="hotelDescription" id="hotelDescription" class="form-control" rows="6"  disabled>{{hotels.Desc}}</textarea>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="ImageUrl" class="control-label col-md-2 col-md-offset-1">
+      Фото готелю:
+    </label>
+    <div class="form-group col-md-6">
+      <input type="url" name="ImageUrl" id="ImageUrl" class="form-control"  value="{{hotels.Image}}" disabled></input>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="col-sm-6 col-sm-offset-5">
+      <button type="submit" class="btn btn-primary">Видалити</button> | 
+      <a class="btn btn-primary" href="/admin/hotels">Повернутися</a>
+    </div>
+  </div>
+</form>
+</div>
