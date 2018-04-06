@@ -110,7 +110,7 @@ router.get('/hotels-del/:id', function(req, res, next) {
     });
 });
 router.post('/hotels-del/:id', function(req, res) { //Результат Видалення країни
-    Hotels.remove({ _id: req.params.id }, function(err) {
+    Hotel.remove({ _id: req.params.id }, function(err) {
         if (err) {
             console.error(err);
             res.render('admin/hotels-res', { title: 'Error', message: err });
